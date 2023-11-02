@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/contactsMvpFragment">
+
+    <fragment
+        android:id="@+id/contactsMvpFragment"
+        android:name="com.example.homework_mvpmvvm.mvp.ContactsMvpFragment"
+        android:label="fragment_contacts_mvp"
+        tools:layout="@layout/fragment_contacts_mvp" >
+        <action
+            android:id="@+id/action_contactsMvpFragment_to_contactsMvvmFragment"
+            app:destination="@id/contactsMvvmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsMvvmFragment"
+        android:name="com.example.homework_mvpmvvm.mvvm.ContactsMvvmFragment"
+        android:label="fragment_contacts_mvvm"
+        tools:layout="@layout/fragment_contacts_mvvm" />
+</navigation>
